@@ -26,23 +26,16 @@
 
 ### 1. 建仓库并 push
 
-GitHub 上新建空仓库 `dsh-token-insight`（不要勾选初始化 README），然后在本目录：
+GitHub 上新建空仓库 `dsh-token-insight`（不要勾选初始化 README）。本目录**已经初始化、提交并打了 `v1.0.0` tag**，不要再 `git init`：
 
 ```bash
 git remote add origin git@github.com:luqingjie/dsh-token-insight.git
 git push -u origin main --tags
 ```
 
-如果本地还没有 git 仓库，先执行：
+推送 tag 会触发 `.github/workflows/release.yml`，自动创建 GitHub Release 并附带 `dsh-token-insight-1.0.0.tgz`。
 
-```bash
-git init -b main
-git add .
-git commit -m "feat: DSH token usage plugin"
-git tag v1.0.0
-```
-
-> `dist/`、`*.tgz`、`node_modules/` 已在 `.gitignore` 中排除。
+> `dist/`、`*.tgz`、`node_modules/` 已在 `.gitignore` 中排除；commit 为 `f665838`。
 
 ### 2. 发布 npm
 
@@ -51,7 +44,7 @@ npm login
 npm publish --access public
 ```
 
-发布前确认包名没被占用（`npm view dsh-token-insight version` 应 404）。发布后用户可以直接：
+包名 `dsh-token-insight` 已确认在 npm 可用（`npm view` 返回 404），`npm publish --dry-run` 也已通过。发布后用户可以直接：
 
 ```bash
 dsh plugin --profile desktop add dsh-token-insight
