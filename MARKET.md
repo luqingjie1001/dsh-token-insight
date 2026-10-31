@@ -7,13 +7,13 @@
 ## 建议条目
 
 ```markdown
-- [dsh-token-insight](https://github.com/luqingjie/dsh-token-insight) — DeepSeek Harness 的 Token 用量洞察：本月每日按模型堆叠图、全年日历热力图、会话顶部用量 tab、每轮 token 与交付产物、工作区/会话明细。`npm i dsh-token-insight`
+- [dsh-token-insight](https://github.com/luqingjie1001/dsh-token-insight) — DeepSeek Harness 的 Token 用量洞察：本月每日按模型堆叠图、全年日历热力图、会话顶部用量 tab、每轮 token 与交付产物、工作区/会话明细。`npm i dsh-token-insight`
 ```
 
 英文版：
 
 ```markdown
-- [dsh-token-insight](https://github.com/luqingjie/dsh-token-insight) — Token usage insights for DeepSeek Harness: monthly per-model chart, yearly heatmap, per-session tab, per-turn usage with deliverables, and workspace breakdowns.
+- [dsh-token-insight](https://github.com/luqingjie1001/dsh-token-insight) — Token usage insights for DeepSeek Harness: monthly per-model chart, yearly heatmap, per-session tab, per-turn usage with deliverables, and workspace breakdowns.
 ```
 
 ## 提交前确认
@@ -38,5 +38,5 @@ dsh plugin --profile desktop add dsh-token-insight
 
 ```bash
 dsh plugin --profile desktop add \
-  https://github.com/luqingjie/dsh-token-insight/releases/download/v1.0.0/dsh-token-insight-1.0.0.tgz
+  https://github.com/luqingjie1001/dsh-token-insight/releases/download/v1.0.0/dsh-token-insight-1.0.0.tgz
 ```

@@ -53,11 +53,11 @@
   "author": "陆庆杰 <992768355@qq.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/luqingjie/dsh-token-insight.git"
+    "url": "git+https://github.com/luqingjie1001/dsh-token-insight.git"
   },
-  "homepage": "https://github.com/luqingjie/dsh-token-insight#readme",
+  "homepage": "https://github.com/luqingjie1001/dsh-token-insight#readme",
   "bugs": {
-    "url": "https://github.com/luqingjie/dsh-token-insight/issues"
+    "url": "https://github.com/luqingjie1001/dsh-token-insight/issues"
   },
   "engines": {
     "dsh": ">=0.2.1-rc.3 <0.3.0"

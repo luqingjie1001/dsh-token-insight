@@ -29,7 +29,7 @@
 
 ```bash
 dsh plugin --profile desktop add \
-  https://github.com/luqingjie/dsh-token-insight/releases/download/v1.0.0/dsh-token-insight-1.0.0.tgz
+  https://github.com/luqingjie1001/dsh-token-insight/releases/download/v1.0.0/dsh-token-insight-1.0.0.tgz
 ```
 
 `dsh web` 用户把 `--profile desktop` 换成 `--profile web`。

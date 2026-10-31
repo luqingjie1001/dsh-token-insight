@@ -8,7 +8,7 @@
 |---|---|
 | npm 包名 | `dsh-token-insight` |
 | 版本 | `1.0.0` |
-| GitHub | <https://github.com/luqingjie/dsh-token-insight> |
+| GitHub | <https://github.com/luqingjie1001/dsh-token-insight> |
 | 作者 | 陆庆杰 `<992768355@qq.com>` |
 | License | MIT |
 | 渠道 | GitHub Release + npm + 插件市场 |
@@ -29,7 +29,7 @@
 GitHub 上新建空仓库 `dsh-token-insight`（不要勾选初始化 README）。本目录**已经初始化、提交并打了 `v1.0.0` tag**，不要再 `git init`：
 
 ```bash
-git remote add origin git@github.com:luqingjie/dsh-token-insight.git
+git remote add origin https://github.com/luqingjie1001/dsh-token-insight.git
 git push -u origin main --tags
 ```
 
@@ -68,7 +68,7 @@ dsh plugin --profile desktop add dsh-token-insight
 Release URL 形如：
 
 ```text
-https://github.com/luqingjie/dsh-token-insight/releases/download/v1.0.0/dsh-token-insight-1.0.0.tgz
+https://github.com/luqingjie1001/dsh-token-insight/releases/download/v1.0.0/dsh-token-insight-1.0.0.tgz
 ```
 
 ## 以后升级
