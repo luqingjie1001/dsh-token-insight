@@ -5,6 +5,9 @@ dist/
 *.tgz
 *.log
 
+# npm auth config (contains AccessToken, never commit)
+.npmrc*
+
 # OS
 .DS_Store
 
