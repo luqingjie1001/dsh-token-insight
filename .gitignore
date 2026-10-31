@@ -1,6 +1,14 @@
+# Build & dependencies
 node_modules/
 dist/
 .npm-cache/
 *.tgz
-.DS_Store
 *.log
+
+# OS
+.DS_Store
+
+# Publishing / marketplace notes (local only, not part of the plugin)
+PUBLISHING.md
+MARKET.md
+market/
