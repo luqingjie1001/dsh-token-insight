@@ -1,0 +1,65 @@
+{
+  "name": "dsh-token-insight",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./typert": "./typert.host.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "typert.host.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "CHANGELOG.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "dependencies": {
+    "zod": "^4.4.3"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh": ">=0.2.1-rc.3 <0.3.0",
+    "@deepseek-ai/dsh-typert-protocol": "^0.1.0-rc.7 || ^0.2.0-rc.1 || ^0.2.1-rc.0"
+  },
+  "description": "Token usage for DeepSeek Harness: per-model monthly chart, yearly calendar heatmap, per-turn usage with deliverables, workspace/session breakdowns, and a conversation tab.",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "token",
+    "usage",
+    "statistics"
+  ],
+  "scripts": {
+    "check": "node --check index.js && node --check client.js && node --check typert.host.js"
+  },
+  "author": "陆庆杰 <992768355@qq.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luqingjie/dsh-token-insight.git"
+  },
+  "homepage": "https://github.com/luqingjie/dsh-token-insight#readme",
+  "bugs": {
+    "url": "https://github.com/luqingjie/dsh-token-insight/issues"
+  },
+  "engines": {
+    "dsh": ">=0.2.1-rc.3 <0.3.0"
+  }
+}

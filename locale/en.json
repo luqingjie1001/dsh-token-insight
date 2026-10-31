@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Token Usage",
+    "description": "Per-model token usage with a monthly daily chart and a yearly calendar heatmap, a current-session meter with per-turn tokens and deliverables, and per-session usage grouped by workspace."
+  }
+}

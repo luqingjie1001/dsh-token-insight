@@ -1,0 +1,39 @@
+name: release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          registry-url: https://registry.npmjs.org
+
+      - name: Syntax check
+        run: npm run check
+
+      - name: Build tarball
+        run: npm pack
+
+      - name: GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: "*.tgz"
+          generate_release_notes: true
+
+      # Optional: publish to npm when the repository has an NPM_TOKEN secret.
+      - name: npm publish
+        if: env.NODE_AUTH_TOKEN != ''
+        run: npm publish --access public
